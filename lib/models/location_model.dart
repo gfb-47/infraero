@@ -24,8 +24,4 @@ class Location {
         other.stateName == stateName &&
         other.stateAcronym == stateAcronym;
   }
-
-  @override
-  int get hashCode =>
-      cityName.hashCode ^ stateName.hashCode ^ stateAcronym.hashCode;
 }

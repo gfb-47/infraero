@@ -18,11 +18,18 @@ void main() {
         arrivalTime: DateTime.now().add(Duration(days: 1)),
         departureAirport: airportPalmas,
         arrivalAirport: airportPalmas,
-        duration: Duration(minutes: 80))
+        duration: Duration(minutes: 80)),
+    Flight(
+        flightIdentifier: '2',
+        departureTime: DateTime.now(),
+        arrivalTime: DateTime.now().add(Duration(days: 1)),
+        departureAirport: airportPalmas,
+        arrivalAirport: airportPalmas,
+        duration: Duration(minutes: 80)),
   });
   var infraero = Infraero(companies: {company}, airports: {airportPalmas});
 
   var infraeroController = InfraeroController(infraero);
 
-  print(infraeroController.searchAllCompanies());
+  print(infraeroController.searchAlllFlights());
 }

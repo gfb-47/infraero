@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'location_model.dart';
 
 class Airport {

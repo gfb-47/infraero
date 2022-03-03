@@ -35,4 +35,7 @@ class Flight {
 
     return other is Flight && other.flightIdentifier == flightIdentifier;
   }
+
+  @override
+  int get hashCode => flightIdentifier.hashCode;
 }
